@@ -5,17 +5,10 @@ public class Howmuch {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		String[] arr = new String[10];
-		arr[0] = "얼마에요?";
-		arr[1] = "원 입니다. \n";
-		arr[2] = "몇개 드릴까요?\n";
-		arr[3] = "개 주세요?";
-		arr[4] = "총 금액은";
-		arr[5] = "비싸요 깎아주세요.\n";
-		arr[6] = "몇 퍼센트 DC해드릴까요?";
-		arr[7] = "퍼센트 해주세요\n";
-		arr[8] = "안팔아요";
-		
+		String[] arr = {
+				"얼마에요?","원 입니다. \n","몇개 드릴까요?\n","개 주세요?","총 금액은",
+				"비싸요 깎아주세요.\n","몇 퍼센트 DC해드릴까요?","퍼센트 해주세요\n","안팔아요"
+		};
 		boolean inputOk = true;
 		int price = 0, num = 0, tprice = 0, dc = 0, dcprice = 0;
 		String a = "";

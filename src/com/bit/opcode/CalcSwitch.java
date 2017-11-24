@@ -6,12 +6,9 @@ public class CalcSwitch {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		String[] arr = new String[5];
-		arr[0] = "첫 번째 숫자를 입력하세요.\n";
-		arr[1] = "연산기호를 입력하세요.\n";
-		arr[2] = "두 번째 숫자를 입력하세요.\n";
-		arr[3] = "%d %s %d = %d";
-		arr[4] = "사칙연사자만 입력 가능";
+		String[] arr = {
+				"첫 번째 숫자를 입력하세요.\n","연산기호를 입력하세요.\n","두 번째 숫자를 입력하세요.\n","%d %s %d = %d","사칙연사자만 입력 가능"
+		};
 		int num1 = 0, num2 = 0, result = 0;
 		String opcode = "", test = "";
 		boolean inputOk = true;

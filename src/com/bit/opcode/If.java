@@ -6,12 +6,9 @@ public class If {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String[] arr = new String[5];
-		arr[0]="+";
-		arr[1]="-";
-		arr[2]="*";
-		arr[3]="/";
-		arr[4]="%";
+		String[] arr = {
+				"+","-","*","/","%"
+		};
 		int num1 = 0, num2 = 0, result = 0;
 		String opcode = "";
 		System.out.println("\t첫 번째 숫자를 입력하세요.\n");

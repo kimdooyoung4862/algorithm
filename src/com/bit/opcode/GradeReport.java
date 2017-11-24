@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class GradeReport {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String[] arr = new String[4];
-		arr[0] = "이름?\n";
-		arr[1] = "국어점수?\n";
-		arr[2] = "영어점수?\n";
-		arr[3] = "수학점수?\n";
+		String[] arr = {
+				"이름?\n","국어점수?\n","영어점수?\n","수학점수?\n",
+				"A","B","C","D","F"
+		};
 		String name = "", credit = "";
 		int kor = 0, eng = 0, mat = 0, avg = 0;
 		System.out.print(arr[0]);
@@ -24,19 +23,19 @@ public class GradeReport {
 
 		switch (avg / 10) {
 		case 9:
-			credit = "A";
+			credit = arr[4];
 			break;
 		case 8:
-			credit = "B";
+			credit = arr[5];
 			break;
 		case 7:
-			credit = "C";
+			credit = arr[6];
 			break;
 		case 6:
-			credit = "D";
+			credit = arr[7];
 			break;
 		case 5:
-			credit = "F";
+			credit = arr[8];
 			break;
 
 		}
